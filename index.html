@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEO GARDEN — Baxtli hayot NEO GARDENdan boshlanadi</title>
+
+<link rel="preload" as="image" href="assets/img/hero-bg.webp" fetchpriority="high">
+<link rel="preload" as="font" href="assets/fonts/poppins-800.woff2" type="font/woff2" crossorigin>
+
+<style>
+@font-face{
+  font-family:"Poppins800";
+  src:url("assets/fonts/poppins-800.woff2") format("woff2");
+  font-weight:800;
+  font-style:normal;
+  font-display:swap;
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="card">
+
+  <section class="hero">
+    <picture>
+      <source srcset="assets/img/hero-bg.webp" type="image/webp">
+      <img src="assets/img/hero-bg.jpg" width="768" height="670" alt="Neo Garden turar-joy majmuasi" fetchpriority="high" decoding="async">
+    </picture>
+
+    <picture class="hero__person">
+      <source srcset="assets/img/person.webp" type="image/webp">
+      <img src="assets/img/person.png" width="451" height="720" alt="" fetchpriority="high" decoding="async">
+    </picture>
+
+    <div class="hero__logo">NEO<br>GARDEN</div>
+
+    <div class="hero__badge">
+      <svg class="hero__badge-icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-hourglass"></use></svg>
+      <span>29-IYUN, VAQTI: 20:30</span>
+    </div>
+  </section>
+
+  <section class="content">
+    <h1 class="headline">Baxtli hayot<br>NEO GARDENdan<br>boshlanadi</h1>
+
+    <ul class="features">
+      <li class="features__cell">
+        <svg class="features__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-coin"></use></svg>
+        <span>Boshlang'ich to'lovsiz</span>
+      </li>
+      <li class="features__cell">
+        <svg class="features__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+        <span>60 oyga bo'lib to'lash</span>
+      </li>
+      <li class="features__cell">
+        <svg class="features__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-passport"></use></svg>
+        <span>Faqat pasport evaziga</span>
+      </li>
+      <li class="features__cell">
+        <svg class="features__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-moneybag"></use></svg>
+        <span>Oyiga 3 mln 400 ming so'mdan</span>
+      </li>
+    </ul>
+
+    <button class="cta" type="button">HOZIRROQ BAND QILING</button>
+
+    <div class="countdown-widget">
+      <svg class="countdown-widget__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-hourglass"></use></svg>
+      <span>Qolgan vaqt: <strong id="countdown">00:02:00</strong></span>
+    </div>
+  </section>
+
+</main>
+
+<svg class="sprite-defs" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <g id="icon-hourglass" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 6h18M15 42h18M17 6c0 8 14 8 14 16s-14 8-14 16M31 6c0 8-14 8-14 16s14 8 14 16" fill="currentColor" stroke="none" opacity=".95"/>
+    </g>
+    <g id="icon-coin" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 30c6 6 12 8 18 8s10-3 10-7-4-5-9-6-9-2-9-6 4-6 9-6c5 0 8 2 10 4"/>
+      <circle cx="30" cy="15" r="9"/>
+      <path d="M30 11v8M27 16l3 3 3-3"/>
+    </g>
+    <g id="icon-calendar" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="12" width="32" height="28" rx="4"/>
+      <path d="M5 20h32M13 8v8M29 8v8"/>
+      <circle cx="35" cy="14" r="10" fill="currentColor" stroke="none"/>
+      <text x="35" y="18" font-size="10" font-weight="800" fill="#140d00" stroke="none" text-anchor="middle" font-family="sans-serif">60</text>
+    </g>
+    <g id="icon-passport" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="10" y="6" width="28" height="36" rx="4"/>
+      <circle cx="24" cy="21" r="7"/>
+      <path d="M24 14a10 10 0 010 14M24 14a10 10 0 000 14M17 21h14M15 34h18"/>
+    </g>
+    <g id="icon-moneybag" stroke="currentColor" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 10h10l3 6c5 2 8 7 8 13 0 8-7 13-16 13S8 37 8 29c0-6 3-11 8-13l3-6z"/>
+      <path d="M19 10c0-3 2-5 5-5s5 2 5 5"/>
+      <path d="M24 22v14M20 26c0-2 2-3 4-3s4 1 4 3-2 3-4 3-4 1-4 3 2 3 4 3 4-1 4-3"/>
+    </g>
+  </defs>
+</svg>
+
+<script src="script.js" defer></script>
+</body>
+</html>
