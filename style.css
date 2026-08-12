@@ -92,7 +92,7 @@ body{
 
 .content{
   position:relative;
-  padding:2.5cqw 5.73cqw 8cqw;
+  padding:2.5cqw 5.73cqw 28cqw;
 }
 
 .headline{
@@ -148,10 +148,15 @@ body{
 }
 
 .cta{
+  position:fixed;
+  left:50%;
+  bottom:calc(4cqw + env(safe-area-inset-bottom, 0px));
+  transform:translateX(-50%);
+  z-index:20;
   display:flex;
   align-items:center;
   justify-content:center;
-  margin:7.5cqw auto 0;
+  margin:0;
   width:63.41cqw;
   height:13.15cqw;
   border:none;
