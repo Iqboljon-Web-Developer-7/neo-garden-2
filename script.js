@@ -6,10 +6,9 @@ function startCountdown(el, seconds) {
 
   function tick() {
     const remain = Math.max(0, Math.round((end - Date.now()) / 1000));
-    const h = Math.floor(remain / 3600);
-    const m = Math.floor((remain % 3600) / 60);
+    const m = Math.floor(remain / 60);
     const s = remain % 60;
-    el.textContent = `${pad(h)}:${pad(m)}:${pad(s)}`;
+    el.textContent = `${pad(m)}:${pad(s)}`;
     if (remain <= 0) clearInterval(timer);
   }
 

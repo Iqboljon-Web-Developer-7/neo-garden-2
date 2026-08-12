@@ -32,7 +32,7 @@ body{
 .hero{
   position:relative;
   width:100%;
-  aspect-ratio:768/670;
+  aspect-ratio:768/820;
   overflow:hidden;
   background:var(--bg);
 }
@@ -48,7 +48,7 @@ body{
   position:absolute;
   bottom:0;
   right:1.5cqw;
-  height:95%;
+  height:83cqw;
   width:auto;
 }
 
@@ -104,12 +104,12 @@ body{
 }
 
 .headline{
-  font-family:"Poppins800",sans-serif;
-  font-weight:800;
+  font-family:"PlayfairBlack",Georgia,serif;
+  font-weight:900;
   color:var(--white);
-  font-size:7.35cqw;
-  line-height:1.16;
-  letter-spacing:-.01em;
+  font-size:9.4cqw;
+  line-height:1.14;
+  letter-spacing:0;
   text-align:center;
 }
 

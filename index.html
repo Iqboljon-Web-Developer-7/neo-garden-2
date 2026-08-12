@@ -7,12 +7,20 @@
 
 <link rel="preload" as="image" href="assets/img/hero-bg.webp" fetchpriority="high">
 <link rel="preload" as="font" href="assets/fonts/poppins-800.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="assets/fonts/playfair-900.woff2" type="font/woff2" crossorigin>
 
 <style>
 @font-face{
   font-family:"Poppins800";
   src:url("assets/fonts/poppins-800.woff2") format("woff2");
   font-weight:800;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"PlayfairBlack";
+  src:url("assets/fonts/playfair-900.woff2") format("woff2");
+  font-weight:900;
   font-style:normal;
   font-display:swap;
 }
@@ -26,7 +34,7 @@
   <section class="hero">
     <picture>
       <source srcset="assets/img/hero-bg.webp" type="image/webp">
-      <img src="assets/img/hero-bg.jpg" width="768" height="670" alt="Neo Garden turar-joy majmuasi" fetchpriority="high" decoding="async">
+      <img src="assets/img/hero-bg.jpg" width="768" height="820" alt="Neo Garden turar-joy majmuasi" fetchpriority="high" decoding="async">
     </picture>
 
     <picture class="hero__person">
@@ -68,7 +76,7 @@
 
     <div class="countdown-widget">
       <svg class="countdown-widget__icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-hourglass"></use></svg>
-      <span>Qolgan vaqt: <strong id="countdown">00:02:00</strong></span>
+      <span>Qolgan vaqt: <strong id="countdown">02:00</strong></span>
     </div>
   </section>
 
