@@ -148,7 +148,9 @@ body{
 }
 
 .cta{
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   margin:7.5cqw auto 0;
   width:63.41cqw;
   height:13.15cqw;
@@ -161,6 +163,7 @@ body{
   font-weight:800;
   font-size:3.35cqw;
   letter-spacing:.01em;
+  text-decoration:none;
   cursor:pointer;
 }
 
