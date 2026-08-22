@@ -18,3 +18,13 @@ function startCountdown(el, seconds) {
 
 const countdownEl = document.getElementById("countdown");
 if (countdownEl) startCountdown(countdownEl, COUNTDOWN_SECONDS);
+
+// The CTA leaves for Telegram, so there is no thank-you page on our domain for
+// Meta to detect — the click itself is the conversion signal and has to be sent
+// from here. Event Setup Tool cannot wire this up; it must stay in code.
+const ctaEl = document.querySelector(".cta");
+if (ctaEl) {
+  ctaEl.addEventListener("click", () => {
+    if (typeof fbq === "function") fbq("track", "Lead", { content_name: "telegram-cta" });
+  });
+}
